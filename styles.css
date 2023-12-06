@@ -29,10 +29,10 @@ img {
 nav {
     background-color: #ddd;
     padding: 10px;
+    text-align: center;
 }
 
 nav ul {
-    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -40,6 +40,7 @@ nav ul {
 
 nav li {
     padding: 10px;
+    display: inline;
 }
 
 nav a {
@@ -48,5 +49,5 @@ nav a {
 }
 
 nav a:hover {
-    color: #999;
+    font-weight: bold;
 }
