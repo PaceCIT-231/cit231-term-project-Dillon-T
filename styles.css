@@ -32,8 +32,8 @@ body {
 }
 
 nav {
-    background-color: #ddd;
-    padding: 10px;
+    background-color: #a0b1bb;
+    padding: 15px;
     text-align: center;
 }
 
@@ -55,19 +55,64 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
+    color: #2a2a2a;
+    transition: color 0.3s ease;
 }
 
 h1 {
     text-align: center;
-    animation: spinY 4s linear infinite;
-    transform-style: preserve-3d;
 }
 
-@keyframes spinY {
-    from {
-      transform: rotateY(0deg);
-    }
-    to {
-      transform: rotateY(360deg); 
-    }
+.center-container {
+    text-align: center;
   }
+
+  .center-container img {
+    margin: auto;
+  }
+form {
+    max-width: 400px;
+    margin: left;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Choose a font */
+    font-size: 16px;
+    color: #333;
+    background: linear-gradient(to bottom, #97bdfb, #c0bdbd);
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; /* Choose a different font for headers */
+}
+
+/* Style for the footer */
+footer {
+    background-color: #646262;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
