@@ -23,7 +23,12 @@
     text-align: center;
 }
 img {
-    max-width: fit-content;
+    width: 400px;
+    height: 400px;
+}
+
+body {
+    background-color:;
 }
 
 nav {
@@ -54,4 +59,15 @@ nav a:hover {
 
 h1 {
     text-align: center;
+    animation: spinY 4s linear infinite;
+    transform-style: preserve-3d;
 }
+
+@keyframes spinY {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg); 
+    }
+  }
