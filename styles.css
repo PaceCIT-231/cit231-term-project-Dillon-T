@@ -1,6 +1,6 @@
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(0, 1fr);
     grid-gap: 10px;
     padding: 10px;
 }
@@ -43,7 +43,6 @@ nav ul {
 
 nav li {
     padding: 10px;
-    display: inline;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 18px;
@@ -68,55 +67,7 @@ h1 {
     text-align: center;
   }
 
-.center-container img {
-    margin: auto;
-}
-
-form {
-    max-width: 400px;
-    margin-left: 10px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input[type="checkbox"], input[type="radio"] {
-    display: inline;
-    margin-right: 5px;
-}
-
-label, input {
-    display: block;
-    margin-bottom: 10px;
-}
-
-input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-input[type="text"] {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #555;
-}
-
-body {
+  body {
     font-family: 'Arial', sans-serif; /* Choose a font */
     font-size: 16px;
     color: #333;
@@ -124,42 +75,197 @@ body {
     margin:0px;
 }
 
-main {
-    margin-left: 10px;
-}
 
-h1, h2, h3 {
-    font-family: 'Georgia', serif;
-}
 
-.button1 {
-    text-align: right;
-    padding: 0%;
-    position: absolute;
-}
 
-button {
-    font-size: 16px;
-    font-family: 'Georgia', serif; ;
-    border: none;
-    cursor: pointer;
-    background-color: #000102;
-    color: white;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
 
-button:hover {
-    background-color: #c0bdbd;
-}
 
-footer {
-    padding: 15px;
-    text-align: center;
-    opacity: 0.80; 
-    background-color: rgba(180, 176, 176, 0.206); 
-    box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.25); 
-    border-top: 3px black solid;
-    width: 100%;
-    margin-right: 100px; 
+
+@media only screen and (min-width:1000px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+    }
+    
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .grid-item img {
+        width: 570px;
+        height: 570px;
+    }
+    
+    .text-box {
+        background-color: clear;
+        padding: 10px;
+        margin-top: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    nav {
+        padding: 15px;
+        text-align: center;
+        opacity: 0.80; 
+        background-color: white; 
+        box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.25); 
+        border-bottom: 5px black solid;
+        width: 100%;
+        margin-right: 100px; 
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        padding: 10px;
+        display: inline;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 18px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #333;
+    }
+    
+    nav a:hover {
+        font-weight: bold;
+        color: #2a2a2a;
+        transition: color 0.3s ease;
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    .center-container {
+        text-align: center;
+      }
+    
+    .center-container img {
+        margin: auto;
+    }
+    
+    form {
+        max-width: 400px;
+        margin-left: 10px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="checkbox"], input[type="radio"] {
+        display: inline;
+        margin-right: 5px;
+    }
+    
+    label, input {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+    
+    body {
+        font-family: 'Arial', sans-serif; /* Choose a font */
+        font-size: 16px;
+        color: #333;
+        background: linear-gradient(to bottom, #97bdfb, #c0bdbd);
+        margin:0px;
+    }
+    
+    main {
+        margin-left: 10px;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'Georgia', serif;
+    }
+    
+    .button1 {
+        text-align: right;
+        padding: 0%;
+        position: absolute;
+    }
+    
+    button {
+        font-size: 16px;
+        font-family: 'Georgia', serif; ;
+        border: none;
+        cursor: pointer;
+        background-color: #000102;
+        color: white;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #c0bdbd;
+    }
+    
+    footer {
+        padding: 15px;
+        text-align: center;
+        opacity: 0.80; 
+        background-color: rgba(180, 176, 176, 0.206); 
+        box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.25); 
+        border-top: 3px black solid;
+        width: 100%;
+        margin-right: 100px; 
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
