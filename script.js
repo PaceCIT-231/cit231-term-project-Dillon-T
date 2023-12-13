@@ -30,10 +30,9 @@ function contactValidation() {
     if (emailField.type === "email" && !emailField.value.match(/^\S+@\S+\.\S+$/)) {
         errors.push("Invalid email address");
     }
-    
-        const message = "Thank you for subscribing to GrandLine Fruits!";
-        alert(message);
-    
-        return false;
 }
         
+function responseMessage() {
+    const message = "Thank you for subscribing to GrandLine Fruits!";
+    alert(message);
+}
