@@ -25,9 +25,14 @@
 }
 
 nav {
-    background-color: #bcc1b3;
     padding: 15px;
     text-align: center;
+    opacity: 0.80; 
+    background-color: white; 
+    box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.25); 
+    border-bottom: 5px black solid;
+    width: 100%;
+    margin-right: 100px; 
 }
 
 nav ul {
@@ -41,6 +46,7 @@ nav li {
     display: inline;
     padding-left: 15px;
     padding-right: 15px;
+    font-size: 18px;
 }
 
 nav a {
@@ -62,12 +68,12 @@ h1 {
     text-align: center;
   }
 
-  .center-container img {
+.center-container img {
     margin: auto;
   }
 form {
     max-width: 400px;
-    margin: left;
+    margin-left: 10px;
 }
 
 label, input {
@@ -98,17 +104,25 @@ body {
     font-size: 16px;
     color: #333;
     background: linear-gradient(to bottom, #97bdfb, #c0bdbd);
+    margin:0px;
+}
+
+main {
+    margin-left: 10px;
 }
 
 h1, h2, h3 {
-    font-family: 'Georgia', serif; 
+    font-family: 'Georgia', serif;
 }
 
 /* Style for the footer */
 footer {
-    background-color: #bcc1b3;
-    color: #fff;
-    padding: 15px 0;
+    padding: 15px;
     text-align: center;
-    position: sticky;
+    opacity: 0.80; 
+    background-color: rgba(180, 176, 176, 0.206); 
+    box-shadow: 0px 6px 8px 2px rgba(0, 0, 0, 0.25); 
+    border-top: 3px black solid;
+    width: 100%;
+    margin-right: 100px; 
 }
