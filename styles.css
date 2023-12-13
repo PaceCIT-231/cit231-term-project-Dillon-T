@@ -12,8 +12,8 @@
 }
 
 .grid-item img {
-    width: 570px;
-    height: 570px;
+    width: 550px;
+    height: 550px;
 }
 
 .text-box {
@@ -46,6 +46,8 @@ nav li {
     padding-left: 15px;
     padding-right: 15px;
     font-size: 18px;
+    font-size: 45px;
+    display: inline;
 }
 
 nav a {
@@ -75,8 +77,12 @@ h1 {
     margin:0px;
 }
 
-
-
+.button1 {
+    text-align: right;
+    padding: 0%;
+    position: absolute;
+    font-size: 35px;
+}
 
 
 
@@ -96,8 +102,8 @@ h1 {
     }
     
     .grid-item img {
-        width: 570px;
-        height: 570px;
+        width: 550px;
+        height: 550px;
     }
     
     .text-box {
@@ -206,6 +212,7 @@ h1 {
         color: #333;
         background: linear-gradient(to bottom, #97bdfb, #c0bdbd);
         margin:0px;
+        overflow-x: hidden;
     }
     
     main {
@@ -247,25 +254,5 @@ h1 {
         width: 100%;
         margin-right: 100px; 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
